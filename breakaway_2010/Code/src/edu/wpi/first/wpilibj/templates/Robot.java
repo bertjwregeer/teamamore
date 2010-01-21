@@ -75,21 +75,13 @@ public class Robot extends IterativeRobot {
         getWatchdog().feed();
     }
 
-    /**
-     * This scales a number in the range 0 to 255 to the range -1.0 to 1.0
-     * @param num A number in the range 0 to 255
-     * @return The scaled number in the range -1.0 to 1.0
-     */
-    public double scale(int num) {
-        return scale((num - 127.5)/127.5);
-    }
 
     /**
      * This makes sure a number is within a range -1.0 to 1.0
      * @param num The number
      * @return The number after normalizing
      */
-    public double scale(double num) {
+    public double normalize(double num) {
         //make sure number is within scale
         if(num<-1.0) num = -1.0;
         else if(num>1.0) num = 1.0;
@@ -99,29 +91,18 @@ public class Robot extends IterativeRobot {
 
     /**
      * Sets the speed of drive train motors.
-     *
-     * @param left Value of the left motors (0-255)
-     * @param right Value of the right motors (0-255)
-     */
-    public void setMotors(int left, int right) {
-        setMotors(scale(left),scale(right));
-    }
-
-    /**
-     * Sets the speed of drive train motors.
      * 
-     * @param left Value of the left motors (-1.0 to 1.0)
-     * @param right Value of the right motors (-1.0 to 1.0)
+     * @param left Speed of the left motors (-1.0 to 1.0)
+     * @param right Speed of the right motors (-1.0 to 1.0)
      */
-    public void setMotors(double left, double right) {
+    public void drive(double left, double right) {
         //left motors
-        left1.set(scale(left));
-        left2.set(scale(left));
+        left1.set(normalize(left));
+        left2.set(normalize(left));
 
         //right motors
-        right1.set(scale(right));
-        right2.set(scale(right));
-
+        right1.set(normalize(right));
+        right2.set(normalize(right));
     }
     
 }
