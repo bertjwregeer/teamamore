@@ -21,8 +21,8 @@ import edu.wpi.first.wpilibj.Joystick;
  */
 public class Robot extends IterativeRobot {
 
-    //slot in cRio that control board is plugged into.
-    public static int chasis_slot = 1;
+    //slot in cRio that breakout board is plugged into.
+    public static int chasis_slot = 4;
 
     //declare variables
     Jaguar left1, left2, right1, right2; //motor variables
@@ -34,6 +34,7 @@ public class Robot extends IterativeRobot {
      * used for any initialization code.
      */
     public void robotInit() {
+
         //left wheels
         left1 = new Jaguar(chasis_slot,1);
         left2 = new Jaguar(chasis_slot,2);
@@ -69,7 +70,7 @@ public class Robot extends IterativeRobot {
         //read joystick input and set motor values
 
         //check for special joystick buttons
-
+        
         //feed watchdog
         getWatchdog().feed();
     }
@@ -120,6 +121,7 @@ public class Robot extends IterativeRobot {
         //right motors
         right1.set(scale(right));
         right2.set(scale(right));
+
     }
     
 }
