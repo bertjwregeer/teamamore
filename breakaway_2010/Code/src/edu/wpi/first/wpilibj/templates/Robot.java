@@ -7,10 +7,10 @@
 
 package edu.wpi.first.wpilibj.templates;
 
-
 import edu.wpi.first.wpilibj.IterativeRobot;
 import edu.wpi.first.wpilibj.Jaguar;
 import edu.wpi.first.wpilibj.Joystick;
+import edu.wpi.first.wpilibj.Timer;
 
 /**
  * The VM is configured to automatically run this class, and to call the
@@ -22,12 +22,14 @@ import edu.wpi.first.wpilibj.Joystick;
 public class Robot extends IterativeRobot {
 
     //slot in cRio that breakout board is plugged into.
-    public static int chasis_slot = 4;
+    private static int CHASIS_SLOT = 4;
 
     //declare variables
-    Jaguar left1, left2, right1, right2; //motor variables
-    Joystick joystick; //joystick
-
+    private Jaguar left1, left2, right1, right2; //motor variables
+    private Jaguar kicker_motor; //kicker
+    private Joystick joystick; //joystick
+    private RobotDrive drive_system; //drive system
+    private RobotKicker kicker; //kicker
 
     /**
      * This function is run when the robot is first started up and should be
@@ -35,16 +37,19 @@ public class Robot extends IterativeRobot {
      */
     public void robotInit() {
 
-        //left wheels
-        left1 = new Jaguar(chasis_slot,1);
-        left2 = new Jaguar(chasis_slot,2);
-
-        //right wheels
-        right1 = new Jaguar(chasis_slot,3);
-        right2 = new Jaguar(chasis_slot,4);
-
-        //joystick
+        //instantiate jaguars and joystick
+        left1 = new Jaguar(CHASIS_SLOT,1);
+        left2 = new Jaguar(CHASIS_SLOT,2);
+        right1 = new Jaguar(CHASIS_SLOT,3);
+        right2 = new Jaguar(CHASIS_SLOT,4);
+        kicker_motor = new Jaguar(CHASIS_SLOT,5);
         joystick = new Joystick(1);
+
+        //drive system
+        drive_system = new RobotDrive(left1, left2, right1, right2);
+
+        //kicker
+        kicker = new RobotKicker(kicker_motor, getWatchdog());
     }
 
     /**
@@ -54,7 +59,13 @@ public class Robot extends IterativeRobot {
         //temporarily disable watchdog
         getWatchdog().setEnabled(false);
 
-        //autonomous code goes here
+        drive_system.drive(1,-1); //spin to the right for 2 seconds
+        Timer.delay(2);
+
+        drive_system.drive(.5,.5); //drive forward at half speed for 3 seconds
+        Timer.delay(3);
+
+        kick(); //activate kicker
 
         //re-enable watchdog
         getWatchdog().setEnabled(true);
@@ -67,42 +78,18 @@ public class Robot extends IterativeRobot {
      * This function is called periodically during operator control
      */
     public void teleopPeriodic() {
-        //read joystick input and set motor values
-
-        //check for special joystick buttons
+        
+        drive_system.arcardeDrive(joystick);
         
         //feed watchdog
         getWatchdog().feed();
     }
 
+    public void kick() {
+        //stop robot from moving
+        drive_system.stop();
 
-    /**
-     * This makes sure a number is within a range -1.0 to 1.0
-     * @param num The number
-     * @return The number after normalizing
-     */
-    public double normalize(double num) {
-        //make sure number is within scale
-        if(num<-1.0) num = -1.0;
-        else if(num>1.0) num = 1.0;
-
-        return num;
+        //kick
+        kicker.kick();
     }
-
-    /**
-     * Sets the speed of drive train motors.
-     * 
-     * @param left Speed of the left motors (-1.0 to 1.0)
-     * @param right Speed of the right motors (-1.0 to 1.0)
-     */
-    public void drive(double left, double right) {
-        //left motors
-        left1.set(normalize(left));
-        left2.set(normalize(left));
-
-        //right motors
-        right1.set(normalize(right));
-        right2.set(normalize(right));
-    }
-    
 }
