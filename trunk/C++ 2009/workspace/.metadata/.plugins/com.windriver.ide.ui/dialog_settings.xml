@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="WRSniffImportWizard">
+	</section>
+	<section name="WRProjectWizard">
+		<item key="WRTargetOSWizardPage.STORE_SELECTED_PLATFORM" value="vxworks-6.3"/>
+		<item key="WRSetupBSPPage.SELECTED_FORMAT" value="ELF (default)"/>
+		<item key="BIPSetupScreen.SELECTED_BSP" value="lite5200"/>
+		<item key="WRSetupBSPPage.SELECTED_STYLE" value="Compressed (default)"/>
+		<item key="BIPSetupScreen.SELECTED_TC" value="gnu"/>
+		<item key="WRGenericProjectWizardBuildTypePage.STORE_SELECTED_BUILD_TYPE" value="Boot Loader / BSP Project"/>
+		<item key="WRGenericProjectWizardBuildTypePage.STORE_SELECTED_PLATFORM" value="vxworks-6.3"/>
+		<list key="WRWizardNewProjectCreationPage.STORE_PROJECT_LOCATION">
+			<item value="C:\WindRiver\workspace\AmoreRobot"/>
+			<item value="C:\WindRiver\workspace\Simple"/>
+		</list>
+	</section>
+</section>

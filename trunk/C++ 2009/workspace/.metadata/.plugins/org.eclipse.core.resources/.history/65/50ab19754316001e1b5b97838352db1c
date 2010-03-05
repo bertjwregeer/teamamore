@@ -1,0 +1,147 @@
+#include "AmoreDump.h"
+
+/*
+ * We initialise all of the various variables to the following:
+ * 
+ * Spikes:
+ * Bottom roller: PWM number 6
+ * Lift roller: PWM number 7
+ * 
+ * Victor:
+ * Shooter - lift: PWM number 5
+ * 
+ * DigitalInput 
+ * 		(limit switch so we know when the lift is
+ * 		back in position to accept new balls)
+ * Digital I/O on pin number 1
+ * 
+ */
+
+AmoreDump::AmoreDump() {
+	rollerBottom = new Relay(6, Relay::kBothDirections);
+	rollerLift   = new Jaguar(7);
+	shooterLift  = new Jaguar(5);
+	limitLift    = new DigitalInput(1);
+
+	liftTimer    = new Timer();
+	liftTriggerTimer = new Timer();
+	liftCurAction = 0;
+	liftPrevAction = 0;
+	
+	collectorOn = true;
+}
+
+
+/*
+ * This is the function that takes the lift up
+ * 
+ */
+
+bool AmoreDump::liftUp() {
+	if (liftTimer->Get() == 0) {
+		// Timer has not been turned on yet
+		liftTimer->Start();
+	}
+	
+	// If the lift has been on less than 5 seconds
+	// we want to keep it turned on for now
+	if (liftTimer->Get() <= 5) {
+		// Turn the lift on at half speed
+		//shooterLift->Set(0.5);
+		return false;
+	}
+	// Otherwise we want to turn the lift on, but only at 1 tenth the full speed
+	// so that it keeps the lift up high, but it won't pop a breaker.
+	else {
+		shooterLift->Set(0.1);
+		return true;
+	}
+	
+	std::cerr << "Something is wrong!" << std::endl;
+	return false;
+}
+
+bool AmoreDump::liftDown() {	
+	if (limitLift->Get()) {
+		// The lift is down at the bottom; set the motor speed to 0
+		shooterLift->Set(0.0);
+		collectorOn = true;
+		return true;
+	} else {
+		liftTimer->Stop();
+		liftTimer->Reset();
+		
+		// Make it come back down at half speed, just like it went up
+		//shooterLift->Set(-0.5);
+		return false;
+	}
+}
+
+void AmoreDump::liftGo(Joystick * stick) {
+	std::cerr << "\tCurrent liftCurAction: " << liftCurAction << std::endl;
+	std::cerr << "\tliftPrevAction: " << liftPrevAction << std::endl;
+	
+	if (liftCurAction == 0 || liftCurAction == 1) {
+		// If we have a current action that is not yet complete, run that code.
+		bool myReturn;
+		
+		if (liftCurAction == 1) {
+			myReturn = liftUp();
+		}
+		
+		if (liftCurAction == 0) {
+			myReturn = liftDown();
+		}
+		
+		if (myReturn == true) {
+			// The return value was true, so the action is done
+			liftCurAction = 3;
+		}
+		
+		return;
+	}
+
+	if (stick->GetTrigger()) {
+		collectorOn = false;
+		
+		if (liftPrevAction == 0) {
+			// The previous action was to go down, so now we need to go back up
+			liftCurAction = 1;
+			liftPrevAction = 1;
+		}
+		if (liftPrevAction == 1) {
+			// Previous action was to go up, so now we need to go back down
+			liftCurAction = 0;
+			liftPrevAction = 0;
+		}
+		
+		std::cerr << "\tTrigger was pulled!" << std::endl;
+	}
+}
+
+void AmoreDump::rollerCollect() {
+	std::cerr << "\tValue: collectorOn: " << collectorOn << std::endl;
+	if (collectorOn == true) {
+		rollerBottom->Set(Relay::kForward);
+		rollerLift->Set(0.5);
+	}
+	else {
+		rollerBottom->Set(Relay::kForward);
+	}
+}
+
+void AmoreDump::dumpGo(Joystick * stick) {
+	if (stick->GetRawButton(2)) {
+		rollerLift->Set(Relay::kReverse);
+		std::cerr << "\tDumping ..." << std::endl;
+	}
+}
+
+void AmoreDump::goRun(Joystick * stick) {
+	//std::cerr << "liftGo" << std::endl;
+	liftGo(stick);
+	//std::cerr << "rollerCollect" << std::endl;
+	//rollerCollect();
+	//std::cerr << "dumpGo" << std::endl;
+	//dumpGo(stick);
+}

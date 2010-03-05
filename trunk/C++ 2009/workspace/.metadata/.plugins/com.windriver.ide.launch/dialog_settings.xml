@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="UnifiedDownloadDialog">
+		<item key="UnifiedDownloadDialog.loadOptions.E:/workspace/Simplemodified/AmoreRobot/PPC32diab/AmoreRobot/Debug/AmoreRobot.out" value=""/>
+		<item key="UnifiedDownloadDialog.loadOptions.E:/workspace/Simplemodified/PPC603gnu/SimpleTemplate/Debug/SimpleTemplate.out" value=""/>
+		<item key="UnifiedDownloadDialog.SELECTED_DOWNLOAD_PATH" value="E:\workspace\Simplemodified\AmoreRobot\PPC32diab\AmoreRobot\Debug"/>
+		<list key="UnifiedDownloadDialog.STORE_DOWNLOAD_PATH_ID">
+			<item value="E:/workspace/Simplemodified/PPC603gnu/SimpleTemplate/Debug/SimpleTemplate.out"/>
+			<item value="E:/workspace/Simplemodified/AmoreRobot/PPC32diab/AmoreRobot/Debug/AmoreRobot.out"/>
+		</list>
+	</section>
+	<section name="WRKernelTaskLaunchMainTab">
+	</section>
+	<section name="EntryPointSelectionDialog">
+	</section>
+</section>

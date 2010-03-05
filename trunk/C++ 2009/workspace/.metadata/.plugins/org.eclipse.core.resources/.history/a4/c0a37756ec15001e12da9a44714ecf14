@@ -1,0 +1,43 @@
+#include "AmoreRobotDrive.h"
+
+/*
+ * This is the initialisation routine for the Amore Robot drive, which
+ * is basically a tank drive, with no modifications. May replace using
+ * this code with using just the standard RobotDrive in the near future.
+ * 
+ * We initialise the following:
+ * 
+ * Jaguar:
+ * Left wheels: PWM input 1
+ * Right wheels: PWM input 3
+ * 
+ */
+
+AmoreRobotDrive::AmoreRobotDrive() {
+	leftWheels = new Jaguar(1);
+	rightWheels = new Jaguar(3);
+	//frontWheels = new Jaguar(2);
+	//backWheels = new Jaguar(4);
+	
+}
+
+void AmoreRobotDrive::MyDrive(Joystick * rightStick, Joystick * leftStick) {
+	
+	std::cout << "Joystick Right: "  << rightStick->GetY() << " Joystick Left: " << -(leftStick->GetY()) << std::endl;
+	leftWheels->Set(-(leftStick->GetY()));
+	rightWheels->Set(rightStick->GetY());
+	
+	
+	//frontWheels->Set(stick->GetX());
+	//backWheels->Set(stick->GetY());
+}
+
+void AmoreRobotDrive::AutoDrive() {
+	leftWheels->Set(-0.5);
+	rightWheels->Set(0.5);
+}
+
+void AmoreRobotDrive::AutoStop() {
+	leftWheels->Set(0.0);
+	rightWheels->Set(0.0);
+}

@@ -1,0 +1,743 @@
+DFW status and trace log : Fri Mar 20 17:30:03 2009
+
+17:30:03.718 WARNING: License for Debug Connection Target Server will expire in 4294967295 days
+  SevWarning(1) : UtilLicense.cpp : 545
+17:30:03.875 ERROR: Invalid core (CPU) id
+  SevError(2) : tccoreinfo.cpp : 394
+17:30:03.953 ERROR: Feature MPC5200 has no known license key/code
+  SevError(2) : UtilLicense.cpp : 326
+17:30:04.000 ERROR: Unsupported function call: TargetPluginAPI::GetTraceInfo
+  SevError(2) : tccallwrappers.cpp : 4318
+17:30:04.703 ERROR: File not found: C:\WindRiver\workbench-3.0\dfw\0199bb\host\dfwplugins\targetOS\supportfiles\vxWorks6.0\VersionCheck.xml
+  SevError(2) : xmllex.cpp : 52
+17:30:05.296 ERROR: Internal Error: Target connected notice when not connecting
+  SevInternalError(4) : contextstatemanagerimpl.cpp : 519
+17:30:05.562 WARNING: Object file has minimal debug information: /tmpout//nivision.out
+  SevWarning(1) : symbolmanager.cpp : 125
+17:30:05.578 WARNING: Object file has minimal debug information: /tmpout//nivissvc.out
+  SevWarning(1) : symbolmanager.cpp : 125
+17:30:05.593 WARNING: Object file has minimal debug information: /tmpout//niserial.out
+  SevWarning(1) : symbolmanager.cpp : 125
+17:30:05.609 WARNING: Object file has minimal debug information: /tmpout//NiRioSrv.out
+  SevWarning(1) : symbolmanager.cpp : 125
+17:30:05.625 WARNING: Object file has minimal debug information: /tmpout//niorbs.out
+  SevWarning(1) : symbolmanager.cpp : 125
+17:30:05.671 WARNING: Object file has minimal debug information: /tmpout//nipals.out
+  SevWarning(1) : symbolmanager.cpp : 125
+17:30:05.718 WARNING: Object file has minimal debug information: /tmpout//lvrt.out
+  SevWarning(1) : symbolmanager.cpp : 125
+17:30:05.734 WARNING: Object file has minimal debug information: /tmpout//target.out
+  SevWarning(1) : symbolmanager.cpp : 125
+17:30:05.781 WARNING: Object file has minimal debug information: /tmpout//vx_exec.out
+  SevWarning(1) : symbolmanager.cpp : 125
+17:30:05.859 WARNING: Object file has minimal debug information: /tmpout//FRC_FPGA.out
+  SevWarning(1) : symbolmanager.cpp : 125
+17:30:05.875 WARNING: Object file has minimal debug information: /tmpout//nisvcloc.out
+  SevWarning(1) : symbolmanager.cpp : 125
+17:30:05.906 WARNING: Object file has minimal debug information: /tmpout//NiViSv32.out
+  SevWarning(1) : symbolmanager.cpp : 125
+17:30:05.921 WARNING: Object file has minimal debug information: /tmpout//ni_emb.out
+  SevWarning(1) : symbolmanager.cpp : 125
+17:30:05.937 WARNING: Object file has minimal debug information: /tmpout//FRC_NetworkCommunication.out
+  SevWarning(1) : symbolmanager.cpp : 125
+17:30:05.953 WARNING: Object file has minimal debug information: /tmpout//visa32.out
+  SevWarning(1) : symbolmanager.cpp : 125
+17:30:05.968 WARNING: Object file has minimal debug information: /tmpout//nirpcs.out
+  SevWarning(1) : symbolmanager.cpp : 125
+17:30:05.968 WARNING: Object file has minimal debug information: /tmpout//debug.o
+  SevWarning(1) : symbolmanager.cpp : 125
+17:30:05.984 WARNING: Object file has minimal debug information: /tmpout//libexpat.out
+  SevWarning(1) : symbolmanager.cpp : 125
+17:30:06.000 WARNING: Object file has minimal debug information: /tmpout//ftpserve.out
+  SevWarning(1) : symbolmanager.cpp : 125
+17:30:06.015 WARNING: Object file has minimal debug information: /tmpout//NiViRio.out
+  SevWarning(1) : symbolmanager.cpp : 125
+17:30:06.031 WARNING: Object file has minimal debug information: /tmpout//NiRioRpc.out
+  SevWarning(1) : symbolmanager.cpp : 125
+17:30:06.046 WARNING: Object file has minimal debug information: /tmpout//NiViUsb.out
+  SevWarning(1) : symbolmanager.cpp : 125
+17:30:06.062 WARNING: Object file has minimal debug information: /tmpout//NiEnAsrl.out
+  SevWarning(1) : symbolmanager.cpp : 125
+17:30:06.062 WARNING: Object file has minimal debug information: /tmpout//NiViEnet.out
+  SevWarning(1) : symbolmanager.cpp : 125
+17:30:06.078 WARNING: Object file has minimal debug information: /tmpout//NiViPxi.out
+  SevWarning(1) : symbolmanager.cpp : 125
+17:30:06.093 WARNING: Object file has minimal debug information: /tmpout//NiViAsrl.out
+  SevWarning(1) : symbolmanager.cpp : 125
+17:30:06.109 WARNING: Object file has minimal debug information: /tmpout//NiViSrvr.out
+  SevWarning(1) : symbolmanager.cpp : 125
+17:30:13.421 ERROR: Could not translate '0x3 0x124c2d8 0x0 0x0' key to a TOS object id
+  SevError(2) : tctoscallwrappers.cpp : 2426
+17:30:13.421 ERROR: TOS object type  not found
+  SevError(2) : vxWorksPluginContextLib.cpp : 94
+17:30:13.421 ERROR: TOS object type  not found
+  SevError(2) : vxWorksPluginContextLib.cpp : 339
+17:30:14.296 ERROR: Could not translate '0x3 0x47f6e8 0x0 0x0' key to a TOS object id
+  SevError(2) : tctoscallwrappers.cpp : 2426
+17:30:14.296 ERROR: Could not translate '0x3 0x4833b0 0x0 0x0' key to a TOS object id
+  SevError(2) : tctoscallwrappers.cpp : 2426
+17:30:14.296 ERROR: Could not translate '0x3 0x44f088 0x0 0x0' key to a TOS object id
+  SevError(2) : tctoscallwrappers.cpp : 2426
+17:30:14.296 ERROR: Could not translate '0x3 0x487088 0x0 0x0' key to a TOS object id
+  SevError(2) : tctoscallwrappers.cpp : 2426
+17:30:14.296 ERROR: Could not translate '0x3 0x48a9a0 0x0 0x0' key to a TOS object id
+  SevError(2) : tctoscallwrappers.cpp : 2426
+17:30:14.296 ERROR: Could not translate '0x3 0x4a7770 0x0 0x0' key to a TOS object id
+  SevError(2) : tctoscallwrappers.cpp : 2426
+17:30:14.296 ERROR: Could not translate '0x3 0x4afcb8 0x0 0x0' key to a TOS object id
+  SevError(2) : tctoscallwrappers.cpp : 2426
+17:30:14.296 ERROR: Could not translate '0x3 0x4b8108 0x0 0x0' key to a TOS object id
+  SevError(2) : tctoscallwrappers.cpp : 2426
+17:30:14.296 ERROR: Could not translate '0x3 0x4bb968 0x0 0x0' key to a TOS object id
+  SevError(2) : tctoscallwrappers.cpp : 2426
+17:30:14.296 ERROR: Could not translate '0x3 0x4c33c0 0x0 0x0' key to a TOS object id
+  SevError(2) : tctoscallwrappers.cpp : 2426
+17:30:14.296 ERROR: Could not translate '0x3 0x68d290 0x0 0x0' key to a TOS object id
+  SevError(2) : tctoscallwrappers.cpp : 2426
+17:30:14.296 ERROR: Could not translate '0x3 0x68f8d0 0x0 0x0' key to a TOS object id
+  SevError(2) : tctoscallwrappers.cpp : 2426
+17:30:14.296 ERROR: Could not translate '0x3 0x6a97e0 0x0 0x0' key to a TOS object id
+  SevError(2) : tctoscallwrappers.cpp : 2426
+17:30:14.296 ERROR: Could not translate '0x3 0x7c1138 0x0 0x0' key to a TOS object id
+  SevError(2) : tctoscallwrappers.cpp : 2426
+17:30:14.296 ERROR: Could not translate '0x3 0x9a8118 0x0 0x0' key to a TOS object id
+  SevError(2) : tctoscallwrappers.cpp : 2426
+17:30:14.296 ERROR: Could not translate '0x3 0x7de338 0x0 0x0' key to a TOS object id
+  SevError(2) : tctoscallwrappers.cpp : 2426
+17:30:14.296 ERROR: Could not translate '0x3 0x843f48 0x0 0x0' key to a TOS object id
+  SevError(2) : tctoscallwrappers.cpp : 2426
+17:30:14.296 ERROR: Could not translate '0x3 0x8541e8 0x0 0x0' key to a TOS object id
+  SevError(2) : tctoscallwrappers.cpp : 2426
+17:30:14.296 ERROR: Could not translate '0x3 0x8709c0 0x0 0x0' key to a TOS object id
+  SevError(2) : tctoscallwrappers.cpp : 2426
+17:30:14.296 ERROR: Could not translate '0x3 0x1d06020 0x0 0x0' key to a TOS object id
+  SevError(2) : tctoscallwrappers.cpp : 2426
+17:30:14.296 ERROR: Could not translate '0x3 0x9efe50 0x0 0x0' key to a TOS object id
+  SevError(2) : tctoscallwrappers.cpp : 2426
+17:30:14.296 ERROR: Could not translate '0x3 0xa60790 0x0 0x0' key to a TOS object id
+  SevError(2) : tctoscallwrappers.cpp : 2426
+17:30:14.296 ERROR: Could not translate '0x3 0xab2410 0x0 0x0' key to a TOS object id
+  SevError(2) : tctoscallwrappers.cpp : 2426
+17:30:14.312 ERROR: Could not translate '0x3 0xba0a10 0x0 0x0' key to a TOS object id
+  SevError(2) : tctoscallwrappers.cpp : 2426
+17:30:14.312 ERROR: Could not translate '0x3 0xc759c0 0x0 0x0' key to a TOS object id
+  SevError(2) : tctoscallwrappers.cpp : 2426
+17:30:14.312 ERROR: Could not translate '0x3 0xe50dd0 0x0 0x0' key to a TOS object id
+  SevError(2) : tctoscallwrappers.cpp : 2426
+17:30:14.312 ERROR: Could not translate '0x3 0x129cba0 0x0 0x0' key to a TOS object id
+  SevError(2) : tctoscallwrappers.cpp : 2426
+17:30:14.312 ERROR: Could not translate '0x3 0x122d680 0x0 0x0' key to a TOS object id
+  SevError(2) : tctoscallwrappers.cpp : 2426
+17:30:14.312 ERROR: Could not translate '0x3 0x1254cd8 0x0 0x0' key to a TOS object id
+  SevError(2) : tctoscallwrappers.cpp : 2426
+17:30:14.328 ERROR: Invalid Object Id
+  SevError(2) : tctoscallwrappers.cpp : 2403
+17:30:14.328 ERROR: Invalid Object Id
+  SevError(2) : tctoscallwrappers.cpp : 2403
+17:30:14.328 ERROR: Invalid Object Id
+  SevError(2) : tctoscallwrappers.cpp : 2403
+17:30:14.343 ERROR: Invalid Object Id
+  SevError(2) : tctoscallwrappers.cpp : 2403
+17:30:14.343 ERROR: Invalid Object Id
+  SevError(2) : tctoscallwrappers.cpp : 2403
+17:30:14.343 ERROR: Invalid Object Id
+  SevError(2) : tctoscallwrappers.cpp : 2403
+17:30:14.359 ERROR: Invalid Object Id
+  SevError(2) : tctoscallwrappers.cpp : 2403
+17:30:14.359 ERROR: Invalid Object Id
+  SevError(2) : tctoscallwrappers.cpp : 2403
+17:30:14.359 ERROR: Invalid Object Id
+  SevError(2) : tctoscallwrappers.cpp : 2403
+17:30:14.359 ERROR: Invalid Object Id
+  SevError(2) : tctoscallwrappers.cpp : 2403
+17:30:14.375 ERROR: Invalid Object Id
+  SevError(2) : tctoscallwrappers.cpp : 2403
+17:30:14.375 ERROR: Invalid Object Id
+  SevError(2) : tctoscallwrappers.cpp : 2403
+17:30:14.375 ERROR: Invalid Object Id
+  SevError(2) : tctoscallwrappers.cpp : 2403
+17:30:14.375 ERROR: Invalid Object Id
+  SevError(2) : tctoscallwrappers.cpp : 2403
+17:30:14.390 ERROR: Invalid Object Id
+  SevError(2) : tctoscallwrappers.cpp : 2403
+17:30:14.390 ERROR: Invalid Object Id
+  SevError(2) : tctoscallwrappers.cpp : 2403
+17:30:14.390 ERROR: Invalid Object Id
+  SevError(2) : tctoscallwrappers.cpp : 2403
+17:30:14.390 ERROR: Invalid Object Id
+  SevError(2) : tctoscallwrappers.cpp : 2403
+17:30:14.406 ERROR: Invalid Object Id
+  SevError(2) : tctoscallwrappers.cpp : 2403
+17:30:14.406 ERROR: Invalid Object Id
+  SevError(2) : tctoscallwrappers.cpp : 2403
+17:30:14.406 ERROR: Invalid Object Id
+  SevError(2) : tctoscallwrappers.cpp : 2403
+17:30:14.421 ERROR: Invalid Object Id
+  SevError(2) : tctoscallwrappers.cpp : 2403
+17:30:14.421 ERROR: Invalid Object Id
+  SevError(2) : tctoscallwrappers.cpp : 2403
+17:30:14.421 ERROR: Invalid Object Id
+  SevError(2) : tctoscallwrappers.cpp : 2403
+17:30:14.421 ERROR: Invalid Object Id
+  SevError(2) : tctoscallwrappers.cpp : 2403
+17:30:14.437 ERROR: Invalid Object Id
+  SevError(2) : tctoscallwrappers.cpp : 2403
+17:30:14.437 ERROR: Invalid Object Id
+  SevError(2) : tctoscallwrappers.cpp : 2403
+17:30:14.437 ERROR: Invalid Object Id
+  SevError(2) : tctoscallwrappers.cpp : 2403
+17:30:14.437 ERROR: Invalid Object Id
+  SevError(2) : tctoscallwrappers.cpp : 2403
+17:30:14.578 ERROR: Invalid Object Id
+  SevError(2) : tctoscallwrappers.cpp : 2403
+17:30:14.578 ERROR: Invalid Object Id
+  SevError(2) : tctoscallwrappers.cpp : 2403
+17:30:14.578 ERROR: Could not translate '0x3 0x1330c00 0x0 0x0' key to a TOS object id
+  SevError(2) : tctoscallwrappers.cpp : 2426
+17:30:14.593 ERROR: Invalid Object Id
+  SevError(2) : tctoscallwrappers.cpp : 2403
+17:30:14.593 ERROR: Invalid Object Id
+  SevError(2) : tctoscallwrappers.cpp : 2403
+17:30:14.593 ERROR: Invalid Object Id
+  SevError(2) : tctoscallwrappers.cpp : 2403
+17:30:14.593 ERROR: Invalid Object Id
+  SevError(2) : tctoscallwrappers.cpp : 2403
+17:30:14.593 ERROR: Invalid Object Id
+  SevError(2) : tctoscallwrappers.cpp : 2403
+17:30:14.609 ERROR: S17:ymb30ol:14. is 60no9 ERROR: Symbol is not a scope
+  SevError(2) : symbolaccessspt.cpp : 3109
+t a scope
+  SevError(2) : symbolaccessspt.cpp : 3109
+17:30:14.656 ERROR: Debugging information not available
+  SevError(2) : symbolaccessspt.cpp : 2960
+17:30:14.765 ERROR: Invalid Object Id
+  SevError(2) : tctoscallwrappers.cpp : 2403
+17:30:14.953 ERROR: Invalid Object Id
+  SevError(2) : tctoscallwrappers.cpp : 2403
+17:30:15.000 ERROR: Invalid Object Id
+  SevError(2) : tctoscallwrappers.cpp : 2403
+17:30:15.000 ERROR: Symbol is not a scope
+  SevError(2) : symbolaccessspt.cpp : 3109
+17:30:15.062 ERROR: Invalid Object Id
+  SevError(2) : tctoscallwrappers.cpp : 2403
+17:30:15.062 ERROR: Invalid Object Id
+  SevError(2) : tctoscallwrappers.cpp : 2403
+17:30:15.078 ERROR: Invalid Object Id
+  SevError(2) : tctoscallwrappers.cpp : 2403
+117:30:15.078 ERROR: Bad Parameter, invalid value: SymbolComponent::OnFlush() : notificationKind=16
+  SevError(2) : symbolcomponentspt.cpp : 505
+7:30:15.078 ERROR: Could not translate '0x3 0x4292c8 0x1330c00 0x4292c8' key to a TOS object id
+  SevError(2) : tctoscallwrappers.cpp : 2426
+17:30:15.078 ERROR: Could not translate '0x8 0x4292c8 0x1330c00 0x4292c8' key to a TOS object id
+  SevError(2) : tctoscallwrappers.cpp : 2426
+17:30:15.078 ERROR: Debugging information not available
+  SevError(2) : symbolaccessspt.cpp : 2960
+17:30:15.078 ERROR: Invalid Object Id
+  SevError(2) : tctoscallwrappers.cpp : 2403
+17:30:15.375 ERROR: Unrecognized property: General:RegisterAccessWhileRunning
+  SevError(2) : tcproperties.cpp : 76
+17:30:15.375 ERROR: Invalid Object Id
+  SevError(2) : tctoscallwrappers.cpp : 2403
+17:30:15.375 ERROR: Invalid Object Id
+  SevError(2) : tctoscallwrappers.cpp : 2403
+17:30:15.390 ERROR: No register with name 'sr0' exists: DataAccessManager::GetRegister
+  SevError(2) : dataaccessmgr.cpp : 2695
+17:30:15.390 ERROR: No register with name 'sr0' exists
+  SevError(2) : dataaccessmgr.cpp : 2695
+17:30:15.390 ERROR: No register with name 'SR0' exists: DataAccessManager::GetRegister
+  SevError(2) : dataaccessmgr.cpp : 2695
+17:30:15.390 ERROR: No register with name 'SR0' exists
+  SevError(2) : dataaccessmgr.cpp : 2695
+17:30:15.390 ERROR: No register with name 'dar' exists: DataAccessManager::GetRegister
+  SevError(2) : dataaccessmgr.cpp : 2695
+17:30:15.390 ERROR: No register with name 'dar' exists
+  SevError(2) : dataaccessmgr.cpp : 2695
+17:30:15.390 ERROR: No register with name 'DAR' exists: DataAccessManager::GetRegister
+  SevError(2) : dataaccessmgr.cpp : 2695
+17:30:15.390 ERROR: No register with name 'DAR' exists
+  SevError(2) : dataaccessmgr.cpp : 2695
+17:30:15.390 ERROR: No register with name 'spr19' exists: DataAccessManager::GetRegister
+  SevError(2) : dataaccessmgr.cpp : 2695
+17:30:15.390 ERROR: No register with name 'spr19' exists
+  SevError(2) : dataaccessmgr.cpp : 2695
+17:30:15.390 ERROR: No register with name 'SPR19' exists: DataAccessManager::GetRegister
+  SevError(2) : dataaccessmgr.cpp : 2695
+17:30:15.390 ERROR: No register with name 'SPR19' exists
+  SevError(2) : dataaccessmgr.cpp : 2695
+17:30:15.390 ERROR: No register with name 'dec' exists: DataAccessManager::GetRegister
+  SevError(2) : dataaccessmgr.cpp : 2695
+17:30:15.390 ERROR: No register with name 'dec' exists
+  SevError(2) : dataaccessmgr.cpp : 2695
+17:30:15.390 ERROR: No register with name 'DEC' exists: DataAccessManager::GetRegister
+  SevError(2) : dataaccessmgr.cpp : 2695
+17:30:15.390 ERROR: No register with name 'DEC' exists
+  SevError(2) : dataaccessmgr.cpp : 2695
+17:30:15.390 ERROR: No register with name 'spr22' exists: DataAccessManager::GetRegister
+  SevError(2) : dataaccessmgr.cpp : 2695
+17:30:15.390 ERROR: No register with name 'spr22' exists
+  SevError(2) : dataaccessmgr.cpp : 2695
+17:30:15.390 ERROR: No register with name 'SPR22' exists: DataAccessManager::GetRegister
+  SevError(2) : dataaccessmgr.cpp : 2695
+17:30:15.390 ERROR: No register with name 'SPR22' exists
+  SevError(2) : dataaccessmgr.cpp : 2695
+17:30:15.390 ERROR: No register with name 'sdr1' exists: DataAccessManager::GetRegister
+  SevError(2) : dataaccessmgr.cpp : 2695
+17:30:15.390 ERROR: No register with name 'sdr1' exists
+  SevError(2) : dataaccessmgr.cpp : 2695
+17:30:15.390 ERROR: No register with name 'SDR1' exists: DataAccessManager::GetRegister
+  SevError(2) : dataaccessmgr.cpp : 2695
+17:30:15.390 ERROR: No register with name 'SDR1' exists
+  SevError(2) : dataaccessmgr.cpp : 2695
+17:30:15.390 ERROR: No register with name 'spr25' exists: DataAccessManager::GetRegister
+  SevError(2) : dataaccessmgr.cpp : 2695
+17:30:15.390 ERROR: No register with name 'spr25' exists
+  SevError(2) : dataaccessmgr.cpp : 2695
+17:30:15.390 ERROR: No register with name 'SPR25' exists: DataAccessManager::GetRegister
+  SevError(2) : dataaccessmgr.cpp : 2695
+17:30:15.390 ERROR: No register with name 'SPR25' exists
+  SevError(2) : dataaccessmgr.cpp : 2695
+17:30:15.390 ERROR: No register with name 'srr0' exists: DataAccessManager::GetRegister
+  SevError(2) : dataaccessmgr.cpp : 2695
+17:30:15.390 ERROR: No register with name 'srr0' exists
+  SevError(2) : dataaccessmgr.cpp : 2695
+17:30:15.390 ERROR: No register with name 'SRR0' exists: DataAccessManager::GetRegister
+  SevError(2) : dataaccessmgr.cpp : 2695
+17:30:15.390 ERROR: No register with name 'SRR0' exists
+  SevError(2) : dataaccessmgr.cpp : 2695
+17:30:15.390 ERROR: No register with name 'spr26' exists: DataAccessManager::GetRegister
+  SevError(2) : dataaccessmgr.cpp : 2695
+17:30:15.390 ERROR: No register with name 'spr26' exists
+  SevError(2) : dataaccessmgr.cpp : 2695
+17:30:15.390 ERROR: No register with name 'SPR26' exists: DataAccessManager::GetRegister
+  SevError(2) : dataaccessmgr.cpp : 2695
+17:30:15.390 ERROR: No register with name 'SPR26' exists
+  SevError(2) : dataaccessmgr.cpp : 2695
+17:30:15.390 ERROR: No register with name 'srr1' exists: DataAccessManager::GetRegister
+  SevError(2) : dataaccessmgr.cpp : 2695
+17:30:15.390 ERROR: No register with name 'srr1' exists
+  SevError(2) : dataaccessmgr.cpp : 2695
+17:30:15.390 ERROR: No register with name 'SRR1' exists: DataAccessManager::GetRegister
+  SevError(2) : dataaccessmgr.cpp : 2695
+17:30:15.390 ERROR: No register with name 'SRR1' exists
+  SevError(2) : dataaccessmgr.cpp : 2695
+17:30:15.390 ERROR: No register with name 'spr27' exists: DataAccessManager::GetRegister
+  SevError(2) : dataaccessmgr.cpp : 2695
+17:30:15.390 ERROR: No register with name 'spr27' exists
+  SevError(2) : dataaccessmgr.cpp : 2695
+17:30:15.390 ERROR: No register with name 'SPR27' exists: DataAccessManager::GetRegister
+  SevError(2) : dataaccessmgr.cpp : 2695
+17:30:15.390 ERROR: No register with name 'SPR27' exists
+  SevError(2) : dataaccessmgr.cpp : 2695
+17:30:15.390 ERROR: No register with name 'sprg0' exists: DataAccessManager::GetRegister
+  SevError(2) : dataaccessmgr.cpp : 2695
+17:30:15.390 ERROR: No register with name 'sprg0' exists
+  SevError(2) : dataaccessmgr.cpp : 2695
+17:30:15.390 ERROR: No register with name 'SPRG0' exists: DataAccessManager::GetRegister
+  SevError(2) : dataaccessmgr.cpp : 2695
+17:30:15.406 ERROR: No register with name 'SPRG0' exists
+  SevError(2) : dataaccessmgr.cpp : 2695
+17:30:15.406 ERROR: No register with name 'spr272' exists: DataAccessManager::GetRegister
+  SevError(2) : dataaccessmgr.cpp : 2695
+17:30:15.406 ERROR: No register with name 'spr272' exists
+  SevError(2) : dataaccessmgr.cpp : 2695
+17:30:15.406 ERROR: No register with name 'SPR272' exists: DataAccessManager::GetRegister
+  SevError(2) : dataaccessmgr.cpp : 2695
+17:30:15.406 ERROR: No register with name 'SPR272' exists
+  SevError(2) : dataaccessmgr.cpp : 2695
+17:30:15.406 ERROR: No register with name 'sprg1' exists: DataAccessManager::GetRegister
+  SevError(2) : dataaccessmgr.cpp : 2695
+17:30:15.406 ERROR: No register with name 'sprg1' exists
+  SevError(2) : dataaccessmgr.cpp : 2695
+17:30:15.406 ERROR: No register with name 'SPRG1' exists: DataAccessManager::GetRegister
+  SevError(2) : dataaccessmgr.cpp : 2695
+17:30:15.406 ERROR: No register with name 'SPRG1' exists
+  SevError(2) : dataaccessmgr.cpp : 2695
+17:30:15.406 ERROR: No register with name 'spr273' exists: DataAccessManager::GetRegister
+  SevError(2) : dataaccessmgr.cpp : 2695
+17:30:15.406 ERROR: No register with name 'spr273' exists
+  SevError(2) : dataaccessmgr.cpp : 2695
+17:30:15.406 ERROR: No register with name 'SPR273' exists: DataAccessManager::GetRegister
+  SevError(2) : dataaccessmgr.cpp : 2695
+17:30:15.406 ERROR: No register with name 'SPR273' exists
+  SevError(2) : dataaccessmgr.cpp : 2695
+17:30:15.406 ERROR: No register with name 'sprg2' exists: DataAccessManager::GetRegister
+  SevError(2) : dataaccessmgr.cpp : 2695
+17:30:15.406 ERROR: No register with name 'sprg2' exists
+  SevError(2) : dataaccessmgr.cpp : 2695
+17:30:15.406 ERROR: No register with name 'SPRG2' exists: DataAccessManager::GetRegister
+  SevError(2) : dataaccessmgr.cpp : 2695
+17:30:15.406 ERROR: No register with name 'SPRG2' exists
+  SevError(2) : dataaccessmgr.cpp : 2695
+17:30:15.406 ERROR: No register with name 'spr274' exists: DataAccessManager::GetRegister
+  SevError(2) : dataaccessmgr.cpp : 2695
+17:30:15.406 ERROR: No register with name 'spr274' exists
+  SevError(2) : dataaccessmgr.cpp : 2695
+17:30:15.406 ERROR: No register with name 'SPR274' exists: DataAccessManager::GetRegister
+  SevError(2) : dataaccessmgr.cpp : 2695
+17:30:15.406 ERROR: No register with name 'SPR274' exists
+  SevError(2) : dataaccessmgr.cpp : 2695
+17:30:15.406 ERROR: No register with name 'sprg3' exists: DataAccessManager::GetRegister
+  SevError(2) : dataaccessmgr.cpp : 2695
+17:30:15.406 ERROR: No register with name 'sprg3' exists
+  SevError(2) : dataaccessmgr.cpp : 2695
+17:30:15.406 ERROR: No register with name 'SPRG3' exists: DataAccessManager::GetRegister
+  SevError(2) : dataaccessmgr.cpp : 2695
+17:30:15.406 ERROR: No register with name 'SPRG3' exists
+  SevError(2) : dataaccessmgr.cpp : 2695
+17:30:15.406 ERROR: No register with name 'spr275' exists: DataAccessManager::GetRegister
+  SevError(2) : dataaccessmgr.cpp : 2695
+17:30:15.406 ERROR: No register with name 'spr275' exists
+  SevError(2) : dataaccessmgr.cpp : 2695
+17:30:15.406 ERROR: No register with name 'SPR275' exists: DataAccessManager::GetRegister
+  SevError(2) : dataaccessmgr.cpp : 2695
+17:30:15.406 ERROR: No register with name 'SPR275' exists
+  SevError(2) : dataaccessmgr.cpp : 2695
+17:30:15.406 ERROR: No register with name 'ibat0l' exists: DataAccessManager::GetRegister
+  SevError(2) : dataaccessmgr.cpp : 2695
+17:30:15.406 ERROR: No register with name 'ibat0l' exists
+  SevError(2) : dataaccessmgr.cpp : 2695
+17:30:15.406 ERROR: No register with name 'IBAT0L' exists: DataAccessManager::GetRegister
+  SevError(2) : dataaccessmgr.cpp : 2695
+17:30:15.406 ERROR: No register with name 'IBAT0L' exists
+  SevError(2) : dataaccessmgr.cpp : 2695
+17:30:15.406 ERROR: No register with name 'spr528' exists: DataAccessManager::GetRegister
+  SevError(2) : dataaccessmgr.cpp : 2695
+17:30:15.406 ERROR: No register with name 'spr528' exists
+  SevError(2) : dataaccessmgr.cpp : 2695
+17:30:15.406 ERROR: No register with name 'SPR528' exists: DataAccessManager::GetRegister
+  SevError(2) : dataaccessmgr.cpp : 2695
+17:30:15.406 ERROR: No register with name 'SPR528' exists
+  SevError(2) : dataaccessmgr.cpp : 2695
+17:30:15.406 ERROR: No register with name 'dbat0l' exists: DataAccessManager::GetRegister
+  SevError(2) : dataaccessmgr.cpp : 2695
+17:30:15.406 ERROR: No register with name 'dbat0l' exists
+  SevError(2) : dataaccessmgr.cpp : 2695
+17:30:15.406 ERROR: No register with name 'DBAT0L' exists: DataAccessManager::GetRegister
+  SevError(2) : dataaccessmgr.cpp : 2695
+17:30:15.406 ERROR: No register with name 'DBAT0L' exists
+  SevError(2) : dataaccessmgr.cpp : 2695
+17:30:15.406 ERROR: No register with name 'spr536' exists: DataAccessManager::GetRegister
+  SevError(2) : dataaccessmgr.cpp : 2695
+17:30:15.406 ERROR: No register with name 'spr536' exists
+  SevError(2) : dataaccessmgr.cpp : 2695
+17:30:15.406 ERROR: No register with name 'SPR536' exists: DataAccessManager::GetRegister
+  SevError(2) : dataaccessmgr.cpp : 2695
+17:30:15.406 ERROR: No register with name 'SPR536' exists
+  SevError(2) : dataaccessmgr.cpp : 2695
+17:30:15.406 ERROR: No information available for stack walk
+  SevError(2) : ppi_ppc_stack.cpp : 5232
+17:30:15.406 ERROR: Unable to determine previous address: CallTraceList::GetCurrentInstructionAddress
+  SevError(2) : symbolcallstackspt.cpp : 303
+17:30:15.406 ERROR: Unable to determine previous address
+  SevError(2) : symbolcallstackspt.cpp : 303
+17:30:15.484 ERROR: Invalid Object Id
+  SevError(2) : tctoscallwrappers.cpp : 2403
+17:30:15.625 ERROR: Invalid Object Id
+  SevError(2) : tctoscallwrappers.cpp : 2403
+17:30:15.750 ERROR: Unrecognized property: General:RegisterAccessWhileRunning
+  SevError(2) : tcproperties.cpp : 76
+17:30:15.750 ERROR: Unable to determine previous address: CallTraceList::GetCurrentInstructionAddress
+  SevError(2) : symbolcallstackspt.cpp : 303
+17:30:15.750 ERROR: Unable to determine previous address
+  SevError(2) : symbolcallstackspt.cpp : 303
+17:30:15.750 ERROR: Unrecognized property: General:RegisterAccessWhileRunning
+  SevError(2) : tcproperties.cpp : 76
+17:30:15.750 ERROR: Unable to determine previous address: CallTraceList::GetCurrentInstructionAddress
+  SevError(2) : symbolcallstackspt.cpp : 303
+17:30:15.750 ERROR: Unable to determine previous address
+  SevError(2) : symbolcallstackspt.cpp : 303
+17:30:15.750 ERROR: Invalid Object Id
+  SevError(2) : tctoscallwrappers.cpp : 2403
+17:30:24.828 ERROR: Could not translate '0x3 0x1340ea0 0x0 0x0' key to a TOS object id
+  SevError(2) : tctoscallwrappers.cpp : 2426
+17:30:24.828 ERROR: Could not translate '0x3 0xc1aeb0 0x0 0x0' key to a TOS object id
+  SevError(2) : tctoscallwrappers.cpp : 2426
+17:30:24.828 ERROR: Invalid Object Id
+  SevError(2) : tctoscallwrappers.cpp : 2403
+17:30:24.843 ERROR: Invalid Object Id
+  SevError(2) : tctoscallwrappers.cpp : 2403
+17:30:27.234 ERROR: Unrecognized property: General:RegisterAccessWhileRunning
+  SevError(2) : tcproperties.cpp : 76
+17:30:27.234 ERROR: Unrecognized property: General:RegisterAccessWhileRunning
+  SevError(2) : tcproperties.cpp : 76
+17:30:27.265 ERROR: Symbol not found: SymbolComponent::GetVariable
+  SevError(2) : symbolcomponent.cpp : 4305
+17:30:27.265 ERROR: Symbol not found
+  SevError(2) : symbolcomponent.cpp : 4305
+17:30:27.265 ERROR: cannot find symbol 'robot' in scope
+  SevError(2) : expressioneval.cpp : 1754
+17:30:27.296 ERROR: cannot find symbol 'robot' in scope
+  SevError(2) : cexpressioneval.cpp : 1001
+17:30:27.468 ERROR: Unrecognized property: General:RegisterAccessWhileRunning
+  SevError(2) : tcproperties.cpp : 76
+17:30:27.468 ERROR: Unrecognized property: General:RegisterAccessWhileRunning
+  SevError(2) : tcproperties.cpp : 76
+17:30:27.500 ERROR: Symbol not found: SymbolComponent::GetVariable
+  SevError(2) : symbolcomponent.cpp : 4305
+17:30:27.500 ERROR: Symbol not found
+  SevError(2) : symbolcomponent.cpp : 4305
+17:30:27.500 ERROR: cannot find symbol 'on' in scope
+  SevError(2) : expressioneval.cpp : 1754
+17:30:27.500 ERROR: cannot find symbol 'on' in scope
+  SevError(2) : cexpressioneval.cpp : 1001
+17:30:28.343 ERROR: Invalid Object Id
+  SevError(2) : tctoscallwrappers.cpp : 2403
+17:30:28.343 ERROR: Invalid Object Id
+  SevError(2) : tctoscallwrappers.cpp : 2403
+17:30:28.343 ERROR: Invalid Object Id
+  SevError(2) : tctoscallwrappers.cpp : 2403
+17:30:28.359 ERROR: Bad Parameter, invalid value: SymbolComponent::OnFlush() : notificationKind=16
+  SevError(2) : symbolcomponentspt.cpp : 505
+17:30:28.359 ERROR: Could not translate '0x3 0x1350b40 0x0 0x0' key to a TOS object id
+  SevError(2) : tctoscallwrappers.cpp : 2426
+17:30:28.359 ERROR: Could not translate '0x3 0x1355c00 0x0 0x0' key to a TOS object id
+  SevError(2) : tctoscallwrappers.cpp : 2426
+17:30:28.375 ERROR: Invalid Object Id
+  SevError(2) : tctoscallwrappers.cpp : 2403
+17:30:28.375 ERROR: Invalid Object Id
+  SevError(2) : tctoscallwrappers.cpp : 2403
+17:30:28.390 ERROR: Invalid Object Id
+  SevError(2) : tctoscallwrappers.cpp : 2403
+17:30:28.406 ERROR: Invalid Object Id
+  SevError(2) : tctoscallwrappers.cpp : 2403
+17:32:21.312 ERROR: No breakpoints have been set
+  SevError(2) : CPUPluginTemplate.cpp : 3656
+17:32:34.640 ERROR: Could not translate '0x3 0x843fa8 0x0 0x0' key to a TOS object id
+  SevError(2) : tctoscallwrappers.cpp : 2426
+17:32:34.640 ERROR: Could not translate '0x3 0x854248 0x0 0x0' key to a TOS object id
+  SevError(2) : tctoscallwrappers.cpp : 2426
+17:32:34.640 ERROR: Could not translate '0x3 0x870a20 0x0 0x0' key to a TOS object id
+  SevError(2) : tctoscallwrappers.cpp : 2426
+17:32:34.640 ERROR: Could not translate '0x3 0xa60760 0x0 0x0' key to a TOS object id
+  SevError(2) : tctoscallwrappers.cpp : 2426
+17:32:34.640 ERROR: Could not translate '0x3 0xab23e8 0x0 0x0' key to a TOS object id
+  SevError(2) : tctoscallwrappers.cpp : 2426
+17:32:34.640 ERROR: Could not translate '0x3 0xba09f8 0x0 0x0' key to a TOS object id
+  SevError(2) : tctoscallwrappers.cpp : 2426
+17:32:34.640 ERROR: Could not translate '0x3 0xc759a0 0x0 0x0' key to a TOS object id
+  SevError(2) : tctoscallwrappers.cpp : 2426
+17:32:34.640 ERROR: Could not translate '0x3 0xc20328 0x0 0x0' key to a TOS object id
+  SevError(2) : tctoscallwrappers.cpp : 2426
+17:32:34.640 ERROR: Invalid Object Id
+  SevError(2) : tctoscallwrappers.cpp : 2403
+17:32:34.656 ERROR: Invalid Object Id
+  SevError(2) : tctoscallwrappers.cpp : 2403
+17:32:34.656 ERROR: Invalid Object Id
+  SevError(2) : tctoscallwrappers.cpp : 2403
+17:32:34.671 ERROR: Invalid Object Id
+  SevError(2) : tctoscallwrappers.cpp : 2403
+17:32:34.671 ERROR: Invalid Object Id
+  SevError(2) : tctoscallwrappers.cpp : 2403
+17:32:34.671 ERROR: Invalid Object Id
+  SevError(2) : tctoscallwrappers.cpp : 2403
+17:32:34.687 ERROR: Invalid Object Id
+  SevError(2) : tctoscallwrappers.cpp : 2403
+17:32:34.687 ERROR: Invalid Object Id
+  SevError(2) : tctoscallwrappers.cpp : 2403
+17:32:34.687 ERROR: Invalid Object Id
+  SevError(2) : tctoscallwrappers.cpp : 2403
+17:32:34.703 ERROR: Invalid Object Id
+  SevError(2) : tctoscallwrappers.cpp : 2403
+17:32:34.703 ERROR: Invalid Object Id
+  SevError(2) : tctoscallwrappers.cpp : 2403
+17:32:34.703 ERROR: Invalid Object Id
+  SevError(2) : tctoscallwrappers.cpp : 2403
+17:32:34.718 ERROR: Invalid Object Id
+  SevError(2) : tctoscallwrappers.cpp : 2403
+17:32:34.718 ERROR: Invalid Object Id
+  SevError(2) : tctoscallwrappers.cpp : 2403
+17:32:34.734 ERROR: Invalid Object Id
+  SevError(2) : tctoscallwrappers.cpp : 2403
+17:32:34.734 ERROR: Invalid Object Id
+  SevError(2) : tctoscallwrappers.cpp : 2403
+17:32:34.734 ERROR: Invalid Object Id
+  SevError(2) : tctoscallwrappers.cpp : 2403
+17:32:34.750 ERROR: Invalid Object Id
+  SevError(2) : tctoscallwrappers.cpp : 2403
+17:32:34.750 ERROR: Invalid Object Id
+  SevError(2) : tctoscallwrappers.cpp : 2403
+17:32:34.750 ERROR: Invalid Object Id
+  SevError(2) : tctoscallwrappers.cpp : 2403
+17:32:34.765 ERROR: Invalid Object Id
+  SevError(2) : tctoscallwrappers.cpp : 2403
+17:32:34.765 ERROR: Invalid Object Id
+  SevError(2) : tctoscallwrappers.cpp : 2403
+17:32:34.781 ERROR: Invalid Object Id
+  SevError(2) : tctoscallwrappers.cpp : 2403
+17:32:34.781 ERROR: Invalid Object Id
+  SevError(2) : tctoscallwrappers.cpp : 2403
+17:32:34.781 ERROR: Invalid Object Id
+  SevError(2) : tctoscallwrappers.cpp : 2403
+17:32:34.796 ERROR: Invalid Object Id
+  SevError(2) : tctoscallwrappers.cpp : 2403
+17:32:37.812 ERROR: Invalid Object Id
+  SevError(2) : tctoscallwrappers.cpp : 2403
+17:32:37.828 ERROR: Invalid Object Id
+  SevError(2) : tctoscallwrappers.cpp : 2403
+17:32:37.828 ERROR: Invalid Object Id
+  SevError(2) : tctoscallwrappers.cpp : 2403
+17:32:37.843 ERROR: Invalid Object Id
+  SevError(2) : tctoscallwrappers.cpp : 2403
+17:32:37.843 ERROR: Invalid Object Id
+  SevError(2) : tctoscallwrappers.cpp : 2403
+17:32:37.859 ERROR: Invalid Object Id
+  SevError(2) : tctoscallwrappers.cpp : 2403
+17:32:37.859 ERROR: Invalid Object Id
+  SevError(2) : tctoscallwrappers.cpp : 2403
+17:32:37.859 ERROR: Invalid Object Id
+  SevError(2) : tctoscallwrappers.cpp : 2403
+17:32:37.875 ERROR: Invalid Object Id
+  SevError(2) : tctoscallwrappers.cpp : 2403
+17:32:37.875 ERROR: Invalid Object Id
+  SevError(2) : tctoscallwrappers.cpp : 2403
+17:32:37.875 ERROR: Invalid Object Id
+  SevError(2) : tctoscallwrappers.cpp : 2403
+17:32:37.890 ERROR: Invalid Object Id
+  SevError(2) : tctoscallwrappers.cpp : 2403
+17:32:37.890 ERROR: Invalid Object Id
+  SevError(2) : tctoscallwrappers.cpp : 2403
+17:32:37.906 ERROR: Invalid Object Id
+  SevError(2) : tctoscallwrappers.cpp : 2403
+17:32:37.906 ERROR: Invalid Object Id
+  SevError(2) : tctoscallwrappers.cpp : 2403
+17:32:37.906 ERROR: Invalid Object Id
+  SevError(2) : tctoscallwrappers.cpp : 2403
+17:32:37.921 ERROR: Invalid Object Id
+  SevError(2) : tctoscallwrappers.cpp : 2403
+17:32:37.921 ERROR: Invalid Object Id
+  SevError(2) : tctoscallwrappers.cpp : 2403
+17:32:37.921 ERROR: Invalid Object Id
+  SevError(2) : tctoscallwrappers.cpp : 2403
+17:32:37.937 ERROR: Invalid Object Id
+  SevError(2) : tctoscallwrappers.cpp : 2403
+17:32:37.937 ERROR: Invalid Object Id
+  SevError(2) : tctoscallwrappers.cpp : 2403
+17:32:37.953 ERROR: Invalid Object Id
+  SevError(2) : tctoscallwrappers.cpp : 2403
+17:32:37.953 ERROR: Invalid Object Id
+  SevError(2) : tctoscallwrappers.cpp : 2403
+17:32:37.953 ERROR: Invalid Object Id
+  SevError(2) : tctoscallwrappers.cpp : 2403
+17:32:37.968 ERROR: Invalid Object Id
+  SevError(2) : tctoscallwrappers.cpp : 2403
+17:32:37.968 ERROR: Invalid Object Id
+  SevError(2) : tctoscallwrappers.cpp : 2403
+17:32:38.046 ERROR: Object module already loaded in memory
+  SevError(2) : tosmodule.cpp : 1801
+17:32:38.062 WARNING: Object file has minimal debug information: /tmpout//nipals.out
+  SevWarning(1) : symbolmanager.cpp : 125
+17:32:38.109 WARNING: Object file has minimal debug information: /tmpout//niorbs.out
+  SevWarning(1) : symbolmanager.cpp : 125
+17:32:38.156 ERROR: Object module already loaded in memory
+  SevError(2) : tosmodule.cpp : 1801
+17:32:38.187 WARNING: Object file has minimal debug information: /tmpout//lvrt.out
+  SevWarning(1) : symbolmanager.cpp : 125
+17:32:38.203 WARNING: Object file has minimal debug information: /tmpout//nirpcs.out
+  SevWarning(1) : symbolmanager.cpp : 125
+17:32:38.203 WARNING: Object file has minimal debug information: /tmpout//target.out
+  SevWarning(1) : symbolmanager.cpp : 125
+17:32:38.218 ERROR: Object module already loaded in memory
+  SevError(2) : tosmodule.cpp : 1801
+17:32:38.218 ERROR: Object module already loaded in memory
+  SevError(2) : tosmodule.cpp : 1801
+17:32:38.265 WARNING: Object file has minimal debug information: /tmpout//vx_exec.out
+  SevWarning(1) : symbolmanager.cpp : 125
+17:32:38.265 WARNING: Object file has minimal debug information: /tmpout//ni_emb.out
+  SevWarning(1) : symbolmanager.cpp : 125
+17:32:38.265 WARNING: Object file has minimal debug information: /tmpout//NiViSrvr.out
+  SevWarning(1) : symbolmanager.cpp : 125
+17:32:38.328 WARNING: Object file has minimal debug information: /tmpout//NiViSv32.out
+  SevWarning(1) : symbolmanager.cpp : 125
+17:32:38.328 WARNING: Object file has minimal debug information: /tmpout//ni_emb.out
+  SevWarning(1) : symbolmanager.cpp : 125
+17:32:38.328 WARNING: Object file has minimal debug information: /tmpout//debug.o
+  SevWarning(1) : symbolmanager.cpp : 125
+17:32:38.343 ERROR: Object module already loaded in memory
+  SevError(2) : tosmodule.cpp : 1801
+17:32:38.359 WARNING: Object file has minimal debug information: /tmpout//libexpat.out
+  SevWarning(1) : symbolmanager.cpp : 125
+17:32:38.359 WARNING: Object file has minimal debug information: /tmpout//ftpserve.out
+  SevWarning(1) : symbolmanager.cpp : 125
+17:32:38.375 WARNING: Object file has minimal debug information: /tmpout//NiRioSrv.out
+  SevWarning(1) : symbolmanager.cpp : 125
+17:32:38.390 ERROR: Object module already loaded in memory
+  SevError(2) : tosmodule.cpp : 1801
+17:32:38.406 WARNING: Object file has minimal debug information: /tmpout//visa32.out
+  SevWarning(1) : symbolmanager.cpp : 125
+17:32:38.406 ERROR: Object module already loaded in memory
+  SevError(2) : tosmodule.cpp : 1801
+17:32:38.406 WARNING: Object file has minimal debug information: /tmpout//nisvcloc.out
+  SevWarning(1) : symbolmanager.cpp : 125
+17:32:38.421 ERROR: Object module already loaded in memory
+  SevError(2) : tosmodule.cpp : 1801
+17:32:38.437 ERROR: Could not translate '0x3 0xbc7850 0x0 0x0' key to a TOS object id
+  SevError(2) : tctoscallwrappers.cpp : 2426
+17:32:38.437 ERROR: Invalid core (CPU) id
+  SevError(2) : CPUPluginTemplate.cpp : 4685
+17:32:38.437 WARNING: Object file has minimal debug information: /tmpout//NiRioRpc.out
+  SevWarning(1) : symbolmanager.cpp : 125
+17:32:38.437 ERROR: Node 'Core' does not have a child name 'OSInfo': StdStructContainerInfoNode::evalNodeChild
+  SevError(2) : infonodehelper.hpp : 1025
+17:32:38.437 ERROR: Node 'Core' does not have a child name 'OSInfo'
+  SevError(2) : infonodehelper.hpp : 1025
+17:32:38.437 ERROR: Invalid core (CPU) id
+  SevError(2) : tccoreinfo.cpp : 394
+17:32:38.453 ERROR: Could not translate '0x3 0xe50db0 0x0 0x0' key to a TOS object id
+  SevError(2) : tctoscallwrappers.cpp : 2426
+17:32:38.546 WARNING: Object file has minimal debug information: /tmpout//niserial.out
+  SevWarning(1) : symbolmanager.cpp : 125
+17:32:38.593 WARNING: Object file has minimal debug information: /tmpout//NiViRio.out
+  SevWarning(1) : symbolmanager.cpp : 125
+17:32:38.656 WARNING: Object file has minimal debug information: /tmpout//NiViAsrl.out
+  SevWarning(1) : symbolmanager.cpp : 125
+17:32:39.125 ERROR: Invalid Object Id
+  SevError(2) : tctoscallwrappers.cpp : 2403
+17:32:39.406 WARNING: Object file has minimal debug information: /tmpout//nivissvc.out
+  SevWarning(1) : symbolmanager.cpp : 125
+17:32:39.421 WARNING: Object file has minimal debug information: /tmpout//NiEnAsrl.out
+  SevWarning(1) : symbolmanager.cpp : 125
+17:32:41.437 WARNING: Object file has minimal debug information: /tmpout//nivision.out
+  SevWarning(1) : symbolmanager.cpp : 125
+17:32:41.468 WARNING: Object file has minimal debug information: /tmpout//NiViPxi.out
+  SevWarning(1) : symbolmanager.cpp : 125
+17:32:41.640 WARNING: Object file has minimal debug information: /tmpout//FRC_FPGA.out
+  SevWarning(1) : symbolmanager.cpp : 125
+17:32:41.671 WARNING: Object file has minimal debug information: /tmpout//NiViEnet.out
+  SevWarning(1) : symbolmanager.cpp : 125
+17:32:41.687 WARNING: Object file has minimal debug information: /tmpout//NiViUsb.out
+  SevWarning(1) : symbolmanager.cpp : 125
+17:32:41.718 ERROR: Could not translate '0x3 0x12ac658 0x0 0x0' key to a TOS object id
+  SevError(2) : tctoscallwrappers.cpp : 2426
+17:32:41.718 ERROR: Could not translate '0x3 0x12c54d8 0x0 0x0' key to a TOS object id
+  SevError(2) : tctoscallwrappers.cpp : 2426
+17:32:41.781 ERROR: Invalid Object Id
+  SevError(2) : tctoscallwrappers.cpp : 2403
+17:32:41.781 ERROR: Could not translate '0x3 0x12644b0 0x0 0x0' key to a TOS object id
+  SevError(2) : tctoscallwrappers.cpp : 2426
+17:32:41.781 ERROR: Could not translate '0x3 0x12a1478 0x0 0x0' key to a TOS object id
+  SevError(2) : tctoscallwrappers.cpp : 2426
+17:32:41.781 WARNING: Object file has minimal debug information: /tmpout//FRC_NetworkCommunication.out
+  SevWarning(1) : symbolmanager.cpp : 125
+17:32:41.843 ERROR: Invalid Object Id
+  SevError(2) : tctoscallwrappers.cpp : 2403
+17:32:45.218 ERROR: Could not translate '0x3 0xc16328 0x0 0x0' key to a TOS object id
+  SevError(2) : tctoscallwrappers.cpp : 2426
+17:32:50.625 ERROR: Could not translate '0x3 0x12a7718 0x0 0x0' key to a TOS object id
+  SevError(2) : tctoscallwrappers.cpp : 2426
+17:32:53.140 ERROR: Invalid Object Id
+  SevError(2) : tctoscallwrappers.cpp : 2403
+17:37:14.187 ERROR: Target not connected: TargetComponent::CheckInitAndConnect
+  SevError(2) : targetcomponent.cpp : 2312
+17:37:14.187 ERROR: Target not connected
+  SevError(2) : targetcomponent.cpp : 2312
+17:37:14.187 ERROR: Target not connected: TargetComponent::CheckInitAndConnect
+  SevError(2) : targetcomponent.cpp : 2312
+17:37:14.187 ERROR: Target not connected
+  SevError(2) : targetcomponent.cpp : 2312
+17:37:14.484 ERROR: Socket Closed. API: recv, SessionId: 5548: SocketHandler::Read
+  SevError(2) : sockethandler.cpp : 92
+17:37:14.484 ERROR: Socket Closed. API: recv, SessionId: 5548
+  SevError(2) : sockethandler.cpp : 92
+17:37:14.484 Operation succeeded: ShutdownServer
+  Reason: ERRNone  Severity: ERRSuccessful17:37:14.484 ERROR: WTX Registry Error: Name not found
+  SevError(2) : wtxerrors.cpp : 999

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="UnifiedMessageAreaDialog">
+	</section>
+	<section name="DeleteAction">
+		<item key="/tmpout//debug.o" value=""/>
+		<item key="/tmpout//target.out" value=""/>
+	</section>
+	<section name="TargetConnectionDlg">
+		<item key="TargetConnectionTypePage.Wind River Target Server Connection.defaultInitialized" value="true"/>
+		<item key="TargetConnectionSummaryPage.Wind River Target Server Connection.connectOnFinish" value="true"/>
+		<item key="com.windriver.ide.target.ui.wizard.pages.VxWorksWizardPage.TargetServerOptionsControl.STORE_OPTION_VERBOSE_ID" value="true"/>
+		<list key="com.windriver.ide.target.ui.wizard.pages.VxWorksWizardPage.TargetServerOptionsControl.STORE_OPTIONS_ID">
+			<item value="-R C:/WindRiver/workspace -RW -Bt 3 -A"/>
+		</list>
+		<section name="com.windriver.ide.target.ui.wizard.pages.VxWorksWizardPage">
+			<section name="com.windriver.ide.target.ui.wizard.controls.TargetServerBackendSelectionControl">
+				<item key="com.windriver.ide.target.ui.wizard.pages.VxWorksWizardPage.TargetServerBackendSelectionControl.selectedBackendType" value="wdbrpc"/>
+				<item key="com.windriver.ide.target.ui.wizard.pages.VxWorksWizardPage.WdbproxyTipcConnectionTypeConfigurationPanel.portType" value="70"/>
+				<item key="com.windriver.ide.target.ui.wizard.pages.VxWorksWizardPage.TargetServerBackendSelectionControl.selectedCpu" value="(default from target)"/>
+				<item key="com.windriver.ide.target.ui.wizard.pages.VxWorksWizardPage.WdbserialBackendConfigurationPanel.selectedTTYSpeedRate.Windows XP" value="9600"/>
+				<item key="com.windriver.ide.target.ui.wizard.pages.VxWorksWizardPage.wdbproxy.port" value="0x4444"/>
+				<item key="com.windriver.ide.target.ui.wizard.pages.VxWorksWizardPage.wdbproxy.type" value="UDP"/>
+				<item key="com.windriver.ide.target.ui.wizard.pages.VxWorksWizardPage.WdbproxyTipcConnectionTypeConfigurationPanel.address" value=""/>
+				<item key="com.windriver.ide.target.ui.wizard.pages.VxWorksWizardPage.WdbproxyTipcConnectionTypeConfigurationPanel.portInstance" value="71"/>
+				<item key="com.windriver.ide.target.ui.wizard.pages.VxWorksWizardPage.WdbserialBackendConfigurationPanel.selectedTTYDevice.Windows XP" value=""/>
+				<item key="com.windriver.ide.target.ui.wizard.pages.VxWorksWizardPage.WdbserialBackendConfigurationPanel.selectedTTYDevice.Windows Vista" value=""/>
+				<item key="com.windriver.ide.target.ui.wizard.pages.VxWorksWizardPage.WdbserialBackendConfigurationPanel.selectedTTYSpeedRate.Windows Vista" value="9600"/>
+				<list key="com.windriver.ide.target.ui.wizard.pages.VxWorksWizardPage.wdbpipe.targetNameAddress">
+				</list>
+				<list key="com.windriver.ide.target.ui.wizard.pages.VxWorksWizardPage.wdbproxy.TCP.targetNameAddress">
+				</list>
+				<list key="com.windriver.ide.target.ui.wizard.pages.VxWorksWizardPage.wdbrpc..targetNameAddress">
+					<item value="10.18.52.2"/>
+				</list>
+				<list key="com.windriver.ide.target.ui.wizard.pages.VxWorksWizardPage.wdbproxy.UDP.targetNameAddress">
+				</list>
+				<list key="com.windriver.ide.target.ui.wizard.pages.VxWorksWizardPage.wdbproxy.targetNameAddress">
+				</list>
+			</section>
+			<section name="com.windriver.ide.target.ui.wizard.controls.VxWorksKernelImageSelectionControl">
+				<item key="com.windriver.ide.target.ui.wizard.pages.VxWorksWizardPage.KernelImageSelectionControl.filePathFromTargetButton.state" value="false"/>
+				<section name="com.windriver.ide.target.ui.wizard.pages.VxWorksWizardPage">
+					<section name="com.windriver.ide.target.ui.wizard.controls.VxWorksKernelImageSelectionControl$VxWorksKernelImageFileSelectionControl">
+						<list key="com.windriver.ide.target.ui.wizard.pages.VxWorksWizardPage.SelectedKernelImageHistory">
+							<item value="C:\WindRiver\WPILib\vxWorks"/>
+							<item value="C:\WindRiver\workspace\SimpleTemplate\AmoreRobot\PPC32diab\AmoreRobot\Debug\AmoreRobot.out"/>
+						</list>
+					</section>
+				</section>
+			</section>
+		</section>
+	</section>
+	<section name="WTXConsolePropertiesDialog">
+		<section name="VxWorks6x_10.18.52.2_0@drokm">
+			<item key="consoleStartupOptions" value=" -io -s -n -w "/>
+		</section>
+		<section name="VxWorks6x_10.18.52.2@wideload-xp">
+			<item key="consoleStartupOptions" value=" -io -s -n -w "/>
+		</section>
+	</section>
+</section>

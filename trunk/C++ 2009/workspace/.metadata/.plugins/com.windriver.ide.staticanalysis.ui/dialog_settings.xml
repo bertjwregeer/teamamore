@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="SAIspCalculatorDialog">
+	</section>
+	<section name="substitutions">
+	</section>
+	<section name="class com.windriver.ide.staticanalysis.ui.ispwizard.SAIspStorePage">
+	</section>
+	<section name="unchecked-vars">
+		<item key="hide.unrelatedProjects" value="false"/>
+		<item key="hide.systemIncludes" value="false"/>
+	</section>
+</section>

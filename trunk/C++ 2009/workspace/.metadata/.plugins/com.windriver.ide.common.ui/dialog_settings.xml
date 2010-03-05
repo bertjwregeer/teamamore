@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="WROptionalMessageDialog">
+		<item key="WTXConsolePropertiesDialog.additionalInfo" value="true"/>
+		<item key="TargetUIPlugin.RegistryMigrationChecker.result" value="0"/>
+	</section>
+</section>

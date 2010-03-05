@@ -1,0 +1,8 @@
+#include "AmoreRobotDrive.h"
+
+void AmoreRobotDrive::MyDrive(Joystick *stick) {	
+	float joyX, joyY;
+	joyX = stick->GetX() - 127;
+	joyY = stick->GetY() - 127;
+
+}

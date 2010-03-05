@@ -1,0 +1,20 @@
+#ifndef AMORE_DUMP_H
+#define AMORE_DUMP_H
+
+#include "WPILib.h"
+
+class AmoreRobotDrive {
+public:	
+	AmoreRobotDrive();
+	void MyDrive(Joystick *, Joystick *);
+	void AutoDrive();
+	void AutoStop();
+	
+private:
+	Jaguar * leftWheels;
+	Jaguar * rightWheels;
+	Jaguar * frontWheels;
+	Jaguar * backWheels;
+};
+
+#endif // AMORE_ROBOT_DRIVE

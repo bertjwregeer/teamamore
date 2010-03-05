@@ -1,0 +1,86 @@
+#include "AmoreRobotDrive.h"
+
+float expo(float value) {
+	// leftMotor^3 / 127^2, cubes inputs from joystick
+	return (value * value * value) / 16129;
+}
+
+void AmoreRobotDrive::ArcadeDrive(Joystick *stick) {	
+	float joyX, joyY;
+	joyX = stick->GetX() - 127;
+	joyY = stick->GetY() - 127;
+
+	float directionVector1, directionVector2;
+	float northMotor, southMotor, eastMotor, westMotor;
+	
+	northMotor = expo(joyY + joyX + 127) - 127;
+	southMotor = expo(joyY - joyX + 127) - 127;
+	eastMotor  = expo(joyY + joyX - 127) - 127;
+	westMotor  = expo(joyY - joyX - 127) - 127;
+	
+	directionVector1 = (eastMotor + 127 + westMotor + 127) / 2;
+	directionVector2 = (northMotor + 127 + southMotor + 127) / 2;
+	
+	SetMotorSpeeds(directionVector1 + 127, directionVector2 + 127);
+}
+
+void AmoreRobotDrive::CrabDrive(float moveValue, float rotateValue, bool squaredInputs) {
+	// local variables to hold the computed PWM values for the motors
+	float leftMotorSpeed;
+	float rightMotorSpeed;
+
+	moveValue = moveValue;
+	rotateValue = rotateValue;
+
+	if (squaredInputs) {
+		// square the inputs (while preserving the sign) to
+		// increase fine control while permitting full power
+		if (moveValue >= 0.0) {
+			moveValue = (moveValue * moveValue);
+		} else {
+			moveValue = -(moveValue * moveValue);
+		} 
+		
+		if (rotateValue >= 0.0) {
+			rotateValue = (rotateValue * rotateValue);
+		} else {
+			rotateValue = -(rotateValue * rotateValue);
+		}
+	}
+
+	if (moveValue > 0.0) {
+		if (rotateValue > 0.0) {
+			leftMotorSpeed = moveValue - rotateValue;
+			rightMotorSpeed = max(moveValue, rotateValue);
+		} else {
+			leftMotorSpeed = max(moveValue, -rotateValue);
+			rightMotorSpeed = moveValue + rotateValue;
+		}
+	} else {
+		if (rotateValue > 0.0) {
+			leftMotorSpeed = - max(-moveValue, rotateValue);
+			rightMotorSpeed = moveValue + rotateValue;
+		} else {
+			leftMotorSpeed = moveValue - rotateValue;
+			rightMotorSpeed = - max(-moveValue, -rotateValue);
+		}
+	}
+	
+	// Call extended function rather than SetLeftRightMotorSpeeds:
+	SetMotorSpeeds(leftMotorSpeed, rightMotorSpeed);
+}
+
+void AmoreRobotDrive::SetMotorSpeeds(float vector1, float vector2) {
+	wpi_assert(m_rearLeftMotor != NULL && m_rearRightMotor != NULL);
+
+	vector1 = vector1;
+	vector2 = vector2;
+
+	if (m_frontLeftMotor != NULL)
+		m_frontLeftMotor->Set(vector1 * m_invertedMotors[kFrontLeftMotor]);
+	m_rearLeftMotor->Set(vector1 * m_invertedMotors[kRearLeftMotor]);
+
+	if (m_frontRightMotor != NULL)
+		m_frontRightMotor->Set(-vector2 * m_invertedMotors[kFrontRightMotor]);
+	m_rearRightMotor->Set(-vector2 * m_invertedMotors[kRearRightMotor]);
+}
