@@ -1,0 +1,12 @@
+
+!ENTRY com.windriver.ide.target 1 0 2009-03-20 12:16:56.531
+!MESSAGE cmd /c start '"VxWorks6x_10.18.52.2_0@drokm - Target Console"'  C:\WindRiver\workbench-3.0\foundation\4.1.1\x86-win32\bin\wtxConsole.exe -io -s -n -w  VxWorks6x_10.18.52.2_0@drokm
+
+!ENTRY com.windriver.ide.target 1 0 2009-03-20 12:18:57.406
+!MESSAGE cmd /c start '"VxWorks6x_10.18.52.2_0@drokm - Target Console"'  C:\WindRiver\workbench-3.0\foundation\4.1.1\x86-win32\bin\wtxConsole.exe -io -s -n -w  VxWorks6x_10.18.52.2_0@drokm
+
+!ENTRY com.windriver.ide.target 1 0 2009-03-20 12:20:42.171
+!MESSAGE C:\WindRiver\workbench-3.0\foundation\4.1.1\x86-win32\bin\tgtsvr.exe -n VxWorks6x_10.18.52.2_0 -B wdbrpc -V -R C:/WindRiver/workspace -RW -Bt 3 -c C:\WindRiver\WPILib\vxWorks -A 10.18.52.2
+
+!ENTRY com.windriver.ide.target 1 0 2009-03-20 12:21:00.562
+!MESSAGE cmd /c start '"VxWorks6x_10.18.52.2_0@drokm - Target Console"'  C:\WindRiver\workbench-3.0\foundation\4.1.1\x86-win32\bin\wtxConsole.exe -io -s -n -w  VxWorks6x_10.18.52.2_0@drokm

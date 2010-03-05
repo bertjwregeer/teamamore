@@ -1,0 +1,32 @@
+#ifndef AMORE_DUMP_H
+#define AMORE_DUMP_H
+
+#include "Relay.h"
+#include "Victor.h"
+#include "DigitalInput.h"
+#include "WPILib.h"
+
+class AmoreDump {
+public:	
+	AmoreDump();
+	
+	// Return true when done
+	bool liftUp();
+	bool liftDown();
+	
+	void liftGo(Joystick *);
+	void unLoad(Joystick *);
+	
+	void rollerCollect(bool);
+	
+private:
+	Relay * rollerBottom;
+	Relay * rollerLift;
+	Victor * shooterLift;
+	DigitalInput * limitLift;
+	
+	Timer * liftTimer;
+	
+};
+
+#endif

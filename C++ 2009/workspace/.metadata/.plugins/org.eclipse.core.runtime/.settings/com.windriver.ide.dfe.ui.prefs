@@ -1,0 +1,5 @@
+#Fri Mar 20 11:43:03 MST 2009
+eclipse.preferences.version=1
+StackFramesLimit=10
+StackFramesLimit'Type=Long
+BreakpointScope=target

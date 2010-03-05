@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="TargetConnectionDlg">
+		<section name="com.windriver.ide.target.ui.wizard.pages.VxWorksWizardPage">
+			<section name="com.windriver.ide.target.ui.wizard.controls.TargetServerBackendSelectionControl">
+			</section>
+			<section name="com.windriver.ide.target.ui.wizard.controls.VxWorksKernelImageSelectionControl">
+				<section name="com.windriver.ide.target.ui.wizard.pages.VxWorksWizardPage">
+					<section name="com.windriver.ide.target.ui.wizard.controls.VxWorksKernelImageSelectionControl$VxWorksKernelImageFileSelectionControl">
+					</section>
+				</section>
+			</section>
+		</section>
+	</section>
+	<section name="WTXConsolePropertiesDialog">
+		<section name="VxWorks6x_10.18.52.2_0@drokm">
+			<item key="consoleStartupOptions" value=" -io -s -n -w "/>
+		</section>
+	</section>
+</section>

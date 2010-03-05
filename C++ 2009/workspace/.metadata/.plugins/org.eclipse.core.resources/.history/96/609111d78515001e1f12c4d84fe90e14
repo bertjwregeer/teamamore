@@ -1,0 +1,25 @@
+#include "AmoreRobotDrive.h"
+
+float expo(float value) {
+	// leftMotor^3 / 127^2, cubes inputs from joystick
+	return (value * value * value) / 16129;
+}
+
+void AmoreRobotDrive::MyDrive(Joystick *stick) {	
+	float joyX, joyY;
+	joyX = stick->GetX() - 127;
+	joyY = stick->GetY() - 127;
+
+	float directionVector1, directionVector2;
+	float northMotor, southMotor, eastMotor, westMotor;
+	
+	northMotor = expo(joyY + joyX + 127) - 127;
+	southMotor = expo(joyY - joyX + 127) - 127;
+	eastMotor  = expo(joyY + joyX - 127) - 127;
+	westMotor  = expo(joyY - joyX - 127) - 127;
+	
+	directionVector1 = (eastMotor + 127 + westMotor + 127) / 2;
+	directionVector2 = (northMotor + 127 + southMotor + 127) / 2;
+	
+	SetMotorSpeeds(directionVector1 + 127, directionVector2 + 127);
+}

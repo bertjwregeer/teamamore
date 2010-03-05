@@ -1,0 +1,17 @@
+#ifndef AMORE_DUMP_H
+#define AMORE_DUMP_H
+
+#include "WPILib.h"
+
+class AmoreDump {
+public:	
+	AmoreDump()
+	
+private:
+	Jaguar * leftWheels;
+	Jaguar * rightWheels;
+	Jaguar * frontWheels;
+	Jaguar * backWheels;
+};
+
+#endif // AMORE_ROBOT_DRIVE

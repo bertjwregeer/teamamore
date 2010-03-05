@@ -1,0 +1,20 @@
+#include "AmoreRobotDrive.h"
+
+AmoreRobotDrive::AmoreRobotDrive() {
+	leftWheels = new Jaguar(1);
+	rightWheels = new Jaguar(3);
+	frontWheels = new Jaguar(2);
+	backWheels = new Jaguar(4);
+	
+}
+
+void AmoreRobotDrive::MyDrive(Joystick * rightStick, Joystick * leftStick) {
+	
+	std::cout << "Joystick Right: "  << rightStick->GetY() << " Joystick Left: " << leftStick->GetY() << std::endl;
+	leftWheels->Set(leftStick->GetY());
+	rightWheels->Set(rightStick->GetY());
+	
+	
+	//frontWheels->Set(stick->GetX());
+	//backWheels->Set(stick->GetY());
+}

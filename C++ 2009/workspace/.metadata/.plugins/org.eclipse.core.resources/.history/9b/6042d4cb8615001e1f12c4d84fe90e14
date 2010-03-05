@@ -1,0 +1,15 @@
+#include "AmoreRobotDrive.h"
+
+AmoreRobotDrive::AmoreRobotDrive() {
+	leftWheels = new Jaguar(1);
+	rightWheels = new Jaguar(2);
+	frontWheels = new Jaguar(3);
+	backWheels = new Jaguar(4);
+}
+
+void AmoreRobotDrive::MyDrive(Joystick *stick) {	
+	float joyX, joyY;
+	joyX = stick->GetX() - 127;
+	joyY = stick->GetY() - 127;
+
+}

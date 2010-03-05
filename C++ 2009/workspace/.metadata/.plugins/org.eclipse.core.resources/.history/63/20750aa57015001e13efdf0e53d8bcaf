@@ -1,0 +1,21 @@
+#ifndef AMORE_ROBOT_DRIVE_H
+#define AMORE_ROBOT_DRIVE_H
+
+#include "RobotDrive.h"
+#include "WPILib.h"
+
+class AmoreRobotDrive : public RobotDrive {
+public:	
+	AmoreRobotDrive(unsigned leftMotorChannel, unsigned rightMotorChannel)
+		: RobotDrive(leftMotorChannel, rightMotorChannel) {} // Call parent constructor
+		
+	void ArcadeDrive(Joystick *stick);
+	void CrabDrive(float, float, bool);
+	void SetMotorSpeeds(float, float);
+	void SetMotorSpeeds(float, float);
+	
+private:
+	SpeedController *front, *right, *left, *back;
+};
+
+#endif // AMORE_ROBOT_DRIVE

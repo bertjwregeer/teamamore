@@ -1,0 +1,18 @@
+#ifndef AMORE_DUMP_H
+#define AMORE_DUMP_H
+
+#include "WPILib.h"
+
+class AmoreDump {
+public:	
+	AmoreDump();
+	
+private:
+	Relay * rollerBottom;
+	Relay * rollerLift;
+	Victor * shooterLift;
+	DigitalInput * limitLift;
+	
+};
+
+#endif

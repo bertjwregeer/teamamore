@@ -1,0 +1,13 @@
+#include "AmoreRobotDrive.h"
+
+float expo(float value) {
+	// leftMotor^3 / 127^2, cubes inputs from joystick
+	return (value * value * value) / 16129;
+}
+
+void AmoreRobotDrive::MyDrive(Joystick *stick) {	
+	float joyX, joyY;
+	joyX = stick->GetX() - 127;
+	joyY = stick->GetY() - 127;
+
+}
